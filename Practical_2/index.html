@@ -1,0 +1,95 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> Event Registration Website </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1 style="padding-left: 15px; font-family:Arial, Helvetica, sans-serif;">Web Technology Practical 2</h1>
+                <h5 style="padding-left: 15px;">By: <a class = 'headlink' href="https://www.linkedin.com/in/rppol/" add target="_blank">Rutik Pol,</a> 0120180213
+            </div>
+        </header>
+        <nav style="background-image: url(images/bg.jpg); color: white;">
+            <div onclick="showBlocc('homeDiv')"> Home </div>
+            <div onclick="showBlocc('registerDiv')"> Register </div>
+            <div onclick="showBlocc('registrationDiv')"> Registrations </div>
+        </nav>
+        
+        <br>
+
+        <div id="homeDiv" style="display: block">
+            <h1 style="color: white; text-align: center; text-shadow: 3px 2px black"> Current Leaders in Teams Championship </h1>
+            <br> <br>
+            <img src="meme1.jpeg">
+            <img src="meme2.jpg">
+            <img src="meme3.jpg">
+            <img src="meme4.png">
+            <img src="meme5.png">
+            <br> <br>
+            <h3 style="text-align: center; color: white;"> Welcome to Singapore GP <br> F1's only night race on a street circuit !! </h3>
+            <h2 style="text-align: center; color: white; text-shadow: 2px 2px 2px #ff0000;">Click on the "Register" button to show your Support.</h2>
+        </div>
+
+        <div id="registerDiv" style="display: none">
+            <form id="registerForm"> <p style="color: white; text-align: center;">* (Required fields)</p>
+                <input type="text" id="name" style="color: black" placeholder="*Name"    /> 
+                <input type="text" id="eid"  style="color: black" placeholder="*Email ID"/> <br> <br>
+                
+                <label style="color: white; text-align: center;"> *Gender: <span class="required"> </span> </label> <br>
+                    <input type="radio" id="male" name="gender" value="Male"> 
+                    <label for="male" style="color: white; text-align: center;"> Male&nbsp; </label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female" style="color: white; text-align: center;"> Female&nbsp; </label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other" style="color: white; text-align: center;"> Other </label>
+                    
+                    <br> <br>
+                
+                <input type="text" id="cno" style="color: black" placeholder="*Contact Number"/>              
+                
+                <input style="color: black" type="text" name="iid" id="iid" placeholder="Favourite Team"/> <br><br>               
+              
+                <label style="color: white; text-align: center;"> *Favourite Driver: </label>
+                <select name="field4" class="field-select" name="category" id="category" style="color: black">
+                  <option value="Vintage">Michael Schumacher</option>
+                  <option value="Dank">Sebastian Vettel</option>
+                  <option value="Wholesome">Max Verstappen</option>
+                  <option value="Roast">Charles Leclerc</option>
+                  <option value="Roast">Daniel Riccardo</option>
+                  <option value="Roast">Ayrton Senna</option>
+                  <option value="Roast">Lando Norris</option>
+                  <option value="Roast">Carlos Sainz</option>
+                  <option value="Roast">Kimi Raikonnen</option>
+                </select>
+                              
+                <label style="color: white; text-align: center; padding-left: 20px;"> *F1 fan ID: </label> 
+                <input style="color: black" type="text" name="memeLink" id="memeLink" placeholder="Fan ID"/> <br><br>               
+                
+                <button class="button" type="button" onclick="addRegistration();" style="color: black">Submit </button> <br>
+            </form>
+        </div>
+
+        <div id="registrationDiv" style="display: none"> Registrations 
+            <table id="table">
+                <tr>
+                  <th>Filled on</th>
+                  <th>Name</th>
+                  <th>Email id</th>
+                  <th>Gender</th>
+                  <th>Contact No.</th>
+                  <th>Favourite Team</th>
+                  <th>Favourite Driver</th>
+                  <th>Fan ID</th>
+                </tr>          
+            </table>
+        </div>
+        
+    </body>
+</html>
