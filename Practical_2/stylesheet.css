@@ -33,7 +33,7 @@ body {
 }
 
 #navbar{
-	background-color:#333;
+	background-image: url('images/heading.jpg');
     color:#fff;
     padding:0;
     list-style: none;
