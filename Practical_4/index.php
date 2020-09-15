@@ -29,7 +29,7 @@
     <body>
     <nav class="navbar navbar-light justify-content-center" style="background-color: #e3f2fd;">
       <a class="navbar-brand" href="#">
-        <img src="#" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        <img src="logo.png" width="45" height="30" class="d-inline-block align-top" alt="" loading="lazy">
         Web Technology Assignment 4 
       </a>
     </nav>
