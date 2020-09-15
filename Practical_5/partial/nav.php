@@ -4,11 +4,11 @@
             <li class="nav-item active">
               <a class="nav-link" href="/crud/">List of Fans<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+              <li class="nav-item">
               <a class="nav-link" href="/crud/add.php">Add New</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/rppol/Heroku_WT_A4/blob/master/index.php">Code</a>
+              <a class="nav-link" href="https://github.com/rppol/Web_Technology/tree/master/Practical_5">Code</a>
             </li>
         </ul>
         </div>
