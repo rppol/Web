@@ -43,8 +43,8 @@ function valid()
         return("Enter a Valid Phone Number (Only digits) ");
     } else if (cno.length !=10 ) {
         return("Enter a Valid Phone Number (10 digit only)");
-    } else if (memeLink === "xxx") {
-        return("Password too weak, add special char and digits");
+    } else if (memeLink === "xxx&&&") {
+        return("Still Crackable, add digits");
     } else if  (!(document.getElementById('male').checked) && !(document.getElementById('female').checked) && !(document.getElementById('other').checked)) {
         return("Select a Gender .")
     }
