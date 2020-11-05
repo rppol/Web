@@ -44,7 +44,7 @@ function valid()
     } else if (cno.length !=10 ) {
         return("Enter a Valid Phone Number (10 digit only)");
     } else if (memeLink === "") {
-        return("Fan ID cannot be empty");
+        return("Password cannot be empty");
     } else if  (!(document.getElementById('male').checked) && !(document.getElementById('female').checked) && !(document.getElementById('other').checked)) {
         return("Select a Gender .")
     }
